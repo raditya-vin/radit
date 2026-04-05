@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teka-Teki Pintar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Teka-Teki Pintar</h1>
+            <div class="score">
+                <span>Skor: <span id="score">0</span></span>
+                <span>Level: <span id="level">1</span></span>
+            </div>
+        </header>
+
+        <div class="riddle-container">
+            <div class="riddle-card">
+                <div class="riddle-text" id="riddleText">Loading teka-teki...</div>
+                <div class="input-group">
+                    <input type="text" id="answerInput" placeholder="Jawabanmu..." maxlength="50">
+                    <button id="submitBtn">Kirim Jawaban</button>
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="hint-section">
+            <button id="hintBtn">💡 Petunjuk</button>
+            <div id="hintText" class="hint-text"></div>
+        </div>
+
+        <div class="next-riddle">
+            <button id="nextBtn" class="hidden">Teka-Teki Berikutnya ➡️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
